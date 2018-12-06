@@ -2,7 +2,10 @@
 int main(void)
 {
     int a = 10;
-
+  
+  
+  
+  
     if (a != 9)  puts("First condition is true"); else  puts("First condition is false");
 
     if (a == 9)  puts("Second condition is true"); else  puts("Second condition is false");

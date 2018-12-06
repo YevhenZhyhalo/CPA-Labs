@@ -4,8 +4,11 @@ int main()
 {
     int year;
 
-    printf("Please input an year value: ");
+    printf("Please input an year : ");
     scanf("%d", &year);
+	
+	
+	
     if(year<=0){
         printf("You entered wrong year value");
     }

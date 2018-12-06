@@ -12,7 +12,7 @@ int main()
 	strcat(indexfile, ".txt");
 	if ((fp = fopen(indexfile, "rb")) == NULL)
 	{
-		perror("Error occured while opening file");
+		perror("Error occured while opening");
 		return 1;
 	}
 	strcat(indexfilesource, "1");

@@ -6,6 +6,9 @@ int main(void) {
     scanf("%i", &i);
 
     int j = i >> 4;
+	
+	
     printf("H nibble: %i\n", j);
+	
     printf("L nibble: %i\n", i - (j << 4));
 }

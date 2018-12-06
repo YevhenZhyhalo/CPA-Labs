@@ -29,6 +29,8 @@ char** str_split(char* a_str, const char a_delim)
 
     if (result)
     {
+		
+		
         size_t idx  = 0;
         char* token = strtok(a_str, delim);
 
@@ -53,14 +55,14 @@ int main()
 	int mass[100];
 	scanf("%s", input);
 	char** tokens;
-    //printf("input=[%s]\n\n", input);
+    
     tokens = str_split(input, '.');
     if (tokens)
     {
         int i;
         for (i = 0; *(tokens + i); i++)
         {
-            //printf("token=[%s]\n", *(tokens + i));
+            
             	mass[i] = atoi(*(tokens + i));
 
             	if(i == 3)
@@ -70,15 +72,15 @@ int main()
             
             free(*(tokens + i));
         }
-        //printf("\n");
+        
         free(tokens);
     }
     
-    //int size = sizeof(mass)/sizeof(int);
+    
     int i = 0;
     
     while(i<4){
-    	//printf("\n%d", mass[i]);
+    
     	if(mass[i]>255 || mass[i] < 0)
     	flag = 0;
     	i++;
